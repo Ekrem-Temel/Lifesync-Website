@@ -210,6 +210,7 @@ def load_css():
             max-width: 42rem;
             margin: 0 auto 2.5rem;
             line-height: 1.6;
+            text-align: center;
         }
         
         .hero-buttons {
