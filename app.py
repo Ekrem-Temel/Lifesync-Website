@@ -436,8 +436,9 @@ def load_css():
         }
         
         .tech-content p {
-            color: #64748b;
+            color: #475569;
             font-size: 0.875rem;
+            line-height: 1.6;
         }
         
         .tech-box {
@@ -452,6 +453,7 @@ def load_css():
             font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: 1rem;
+            color: #f1f5f9;
         }
         
         .tech-row {
@@ -461,6 +463,11 @@ def load_css():
             border-bottom: 1px solid #334155;
             font-family: monospace;
             font-size: 0.875rem;
+        }
+        
+        .tech-row span:first-child {
+            color: #e2e8f0;
+            font-weight: 500;
         }
         
         .tech-row:last-child {
@@ -476,9 +483,10 @@ def load_css():
         }
         
         .tech-code code {
-            color: #34d399;
-            font-size: 0.75rem;
+            color: #22c55e;
+            font-size: 0.875rem;
             font-family: monospace;
+            line-height: 1.8;
         }
         
         /* Footer */
@@ -743,8 +751,8 @@ def main():
     <div class="tech-section" id="technical">
         <div class="tech-container">
             <div>
-                <h2 class="section-title" style="color: white; text-align: left; margin-bottom: 1.5rem;">Teknoloji Meraklıları İçin</h2>
-                <p style="color: #94a3b8; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.6;">
+                <h2 class="section-title" style="color: #ffffff; text-align: left; margin-bottom: 1.5rem; font-weight: 700;">Teknoloji Meraklıları İçin</h2>
+                <p style="color: #cbd5e1; font-size: 1.125rem; margin-bottom: 2rem; line-height: 1.6;">
                     LifeSync AI, modern mobil geliştirme standartları ve en güçlü yapay zeka modelleri üzerine inşa edilmiştir. Performans ve gizlilik önceliğimizdir.
                 </p>
     """, unsafe_allow_html=True)
@@ -773,19 +781,19 @@ def main():
                 <h3>System Architecture</h3>
                 <div class="tech-row">
                     <span>Client</span>
-                    <span style="color: #818cf8;">Flutter Mobile App</span>
+                    <span style="color: #818cf8; font-weight: 500;">Flutter Mobile App</span>
                 </div>
                 <div class="tech-row">
                     <span>AI Model</span>
-                    <span style="color: #ec4899;">Gemini 1.5 Pro</span>
+                    <span style="color: #EC4899; font-weight: 500;">Gemini 1.5 Pro</span>
                 </div>
                 <div class="tech-row">
                     <span>Database</span>
-                    <span style="color: #60a5fa;">Hive Box (AES-256)</span>
+                    <span style="color: #60a5fa; font-weight: 500;">Hive Box (AES-256)</span>
                 </div>
                 <div class="tech-row" style="border-bottom: none;">
                     <span>Cloud Sync</span>
-                    <span style="color: #34d399;">Google Drive API</span>
+                    <span style="color: #22c55e; font-weight: 500;">Google Drive API</span>
                 </div>
                 <div class="tech-code">
                     <code>
