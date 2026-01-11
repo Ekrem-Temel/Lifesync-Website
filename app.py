@@ -61,7 +61,7 @@ def load_css():
         }
         
         .navbar-logo .ai {
-            color: #6366f1;
+            color: #6366F1;
         }
         
         .navbar-links {
@@ -71,14 +71,14 @@ def load_css():
         }
         
         .navbar-link {
-            color: #64748b;
+            color: #475569;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.2s;
         }
         
         .navbar-link:hover {
-            color: #6366f1;
+            color: #6366F1;
         }
         
         /* Hero Section */
@@ -110,7 +110,7 @@ def load_css():
         .blob-1 {
             width: 288px;
             height: 288px;
-            background: #6366f1;
+            background: #6366F1;
             top: 80px;
             left: 40px;
         }
@@ -118,7 +118,7 @@ def load_css():
         .blob-2 {
             width: 288px;
             height: 288px;
-            background: #ec4899;
+            background: #EC4899;
             top: 80px;
             right: 40px;
             animation-delay: 2s;
@@ -156,7 +156,7 @@ def load_css():
             background: rgba(99, 102, 241, 0.1);
             border: 1px solid rgba(99, 102, 241, 0.2);
             border-radius: 9999px;
-            color: #6366f1;
+            color: #6366F1;
             font-size: 0.875rem;
             font-weight: 600;
             margin-bottom: 2rem;
@@ -165,7 +165,7 @@ def load_css():
         .hero-badge-dot {
             width: 8px;
             height: 8px;
-            background: #6366f1;
+            background: #6366F1;
             border-radius: 50%;
             position: relative;
         }
@@ -175,7 +175,7 @@ def load_css():
             position: absolute;
             width: 100%;
             height: 100%;
-            background: #6366f1;
+            background: #6366F1;
             border-radius: 50%;
             animation: ping 2s infinite;
             opacity: 0.75;
@@ -198,7 +198,7 @@ def load_css():
         }
         
         .hero-title .gradient-text {
-            background: linear-gradient(90deg, #6366f1 0%, #ec4899 100%);
+            background: linear-gradient(90deg, #6366F1 0%, #EC4899 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -221,7 +221,7 @@ def load_css():
         }
         
         .btn-primary {
-            background: linear-gradient(90deg, #6366f1 0%, #ec4899 100%);
+            background: linear-gradient(90deg, #6366F1 0%, #EC4899 100%);
             color: white;
             padding: 1rem 2rem;
             border-radius: 12px;
@@ -250,7 +250,7 @@ def load_css():
         
         /* Features Section */
         .features-section {
-            background: #f8fafc;
+            background: #F8FAFC;
             padding: 6rem 2rem;
         }
         
@@ -268,7 +268,7 @@ def load_css():
         .section-label {
             font-size: 0.875rem;
             font-weight: 600;
-            color: #6366f1;
+            color: #6366F1;
             text-transform: uppercase;
             letter-spacing: 0.05em;
             margin-bottom: 0.5rem;
@@ -321,7 +321,7 @@ def load_css():
         }
         
         .feature-card:hover .feature-icon {
-            background: #6366f1;
+            background: #6366F1;
             color: white;
         }
         
@@ -375,12 +375,12 @@ def load_css():
         
         .step-number-1 {
             background: rgba(99, 102, 241, 0.1);
-            color: #6366f1;
+            color: #6366F1;
         }
         
         .step-number-2 {
             background: rgba(236, 72, 153, 0.1);
-            color: #ec4899;
+            color: #EC4899;
         }
         
         .step-number-3 {
@@ -402,7 +402,7 @@ def load_css():
         
         /* Technical Specs */
         .tech-section {
-            background: #1e293b;
+            background: #1E293B;
             color: white;
             padding: 5rem 2rem;
         }
@@ -441,7 +441,7 @@ def load_css():
         }
         
         .tech-box {
-            background: #0f172a;
+            background: #0F172A;
             border: 1px solid #334155;
             border-radius: 16px;
             padding: 2rem;
@@ -470,7 +470,7 @@ def load_css():
         .tech-code {
             margin-top: 2rem;
             padding: 1rem;
-            background: #0f172a;
+            background: #0F172A;
             border-radius: 8px;
             border: 1px solid #334155;
         }
@@ -605,25 +605,18 @@ def main():
                 LifeSync AI, ses kayıtlarınızı, fotoğraflarınızı ve notlarınızı otomatik olarak analiz eder, 
                 kategorize eder ve organize eder. Düşünmek size kalsın, gerisini biz halledelim.
             </p>
-            <div class="hero-buttons">
-                <button class="btn-primary" onclick="window.downloadModal=true; window.location.reload()">
-                    Google Play'den İndir →
-                </button>
-                <button class="btn-secondary" disabled>
-                    App Store'da Yakında
-                </button>
-            </div>
         </div>
     </div>
     """, unsafe_allow_html=True)
     
     # Download buttons (Streamlit buttons)
-    col1, col2 = st.columns([1, 1])
-    with col1:
+    col1, col2, col3 = st.columns([1, 1, 1])
+    with col2:
         if st.button("📱 Google Play'den İndir", use_container_width=True, type="primary"):
             st.session_state.show_download = True
             st.rerun()
     
+    col1, col2, col3 = st.columns([1, 1, 1])
     with col2:
         st.button("🍎 App Store'da Yakında", use_container_width=True, disabled=True)
     
@@ -673,7 +666,7 @@ def main():
             <div>
                 <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">
                     Karmaşık Düşüncelerden<br/>
-                    <span style="color: #6366f1;">Düzenli Eylemlere</span>
+                    <span style="color: #6366F1;">Düzenli Eylemlere</span>
                 </h2>
                 <div class="steps-list">
                     <div class="step-item">
@@ -700,18 +693,18 @@ def main():
                 </div>
             </div>
             <div style="text-align: center;">
-                <div style="display: inline-block; width: 300px; height: 600px; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 3rem; padding: 1rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); position: relative;">
-                    <div style="background: #f8fafc; border-radius: 2rem; height: 100%; padding: 1.5rem; display: flex; flex-direction: column;">
+                <div style="display: inline-block; width: 300px; height: 600px; background: #1E293B; border-radius: 3rem; padding: 1rem; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); position: relative; border: 8px solid #0F172A;">
+                    <div style="background: #F8FAFC; border-radius: 2rem; height: 100%; padding: 1.5rem; display: flex; flex-direction: column;">
                         <div style="margin-bottom: 1rem;">
                             <div style="font-size: 0.75rem; color: #64748b; text-transform: uppercase; font-weight: 600; margin-bottom: 0.25rem;">Bugün</div>
                             <div style="font-size: 1.5rem; font-weight: 700; color: #0f172a;">Dashboard</div>
                         </div>
                         <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem;">
-                            <div style="flex: 1; background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); padding: 1rem; border-radius: 1rem; color: white;">
+                            <div style="flex: 1; background: #6366F1; padding: 1rem; border-radius: 1rem; color: white;">
                                 <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">12</div>
                                 <div style="font-size: 0.75rem; opacity: 0.8;">Bekleyen Görev</div>
                             </div>
-                            <div style="flex: 1; background: linear-gradient(135deg, #ec4899 0%, #f472b6 100%); padding: 1rem; border-radius: 1rem; color: white;">
+                            <div style="flex: 1; background: #EC4899; padding: 1rem; border-radius: 1rem; color: white;">
                                 <div style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.25rem;">3</div>
                                 <div style="font-size: 0.75rem; opacity: 0.8;">Toplantı</div>
                             </div>
@@ -719,22 +712,22 @@ def main():
                         <div style="flex: 1; background: white; border-radius: 1.5rem; padding: 1.5rem;">
                             <div style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">Son Aktiviteler</div>
                             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                                <div style="display: flex; gap: 0.75rem; padding: 0.75rem; background: #f8fafc; border-radius: 0.75rem;">
-                                    <div style="width: 40px; height: 40px; background: rgba(99, 102, 241, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #6366f1;">🎤</div>
+                                <div style="display: flex; gap: 0.75rem; padding: 0.75rem; background: #F8FAFC; border-radius: 0.75rem;">
+                                    <div style="width: 40px; height: 40px; background: rgba(99, 102, 241, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #6366F1;">🎤</div>
                                     <div style="flex: 1;">
                                         <div style="height: 8px; background: #e2e8f0; border-radius: 4px; width: 60%; margin-bottom: 0.5rem;"></div>
                                         <div style="height: 8px; background: #e2e8f0; border-radius: 4px; width: 40%;"></div>
                                     </div>
                                 </div>
-                                <div style="display: flex; gap: 0.75rem; padding: 0.75rem; background: #f8fafc; border-radius: 0.75rem;">
-                                    <div style="width: 40px; height: 40px; background: rgba(236, 72, 153, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ec4899;">📅</div>
+                                <div style="display: flex; gap: 0.75rem; padding: 0.75rem; background: #F8FAFC; border-radius: 0.75rem;">
+                                    <div style="width: 40px; height: 40px; background: rgba(236, 72, 153, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #EC4899;">📅</div>
                                     <div style="flex: 1;">
                                         <div style="height: 8px; background: #e2e8f0; border-radius: 4px; width: 60%; margin-bottom: 0.5rem;"></div>
                                         <div style="height: 8px; background: #e2e8f0; border-radius: 4px; width: 40%;"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div style="position: absolute; bottom: 1.5rem; right: 1.5rem; width: 56px; height: 56px; background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);">+</div>
+                            <div style="position: absolute; bottom: 1.5rem; right: 1.5rem; width: 56px; height: 56px; background: linear-gradient(135deg, #6366F1 0%, #EC4899 100%); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem; box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.4);">+</div>
                         </div>
                     </div>
                 </div>
@@ -810,33 +803,54 @@ def main():
     
     # Download Modal
     if st.session_state.get('show_download', False):
-        with st.expander("📥 Erken Erişim - APK İndir", expanded=True):
-            st.markdown("""
-            Beta sürümünü cihazınıza indirmek için lütfen size verilen erişim şifresini giriniz.
-            """)
-            
-            password = st.text_input("Erişim Şifresi", type="password", placeholder="Şifrenizi girin", key="download_password")
-            
-            apk_path = Path("Download/app-release.apk")
-            password_correct = password == "lifesynctest"
-            
-            if password_correct and apk_path.exists():
-                with open(apk_path, "rb") as f:
-                    apk_data = f.read()
-                    st.download_button(
-                        label="📥 APK Dosyasını İndir",
-                        data=apk_data,
-                        file_name="app-release.apk",
-                        mime="application/vnd.android.package-archive",
-                        use_container_width=True,
-                        type="primary"
-                    )
-            elif password and not password_correct:
-                st.error("❌ Hatalı şifre, tekrar deneyin.")
-            elif password_correct and not apk_path.exists():
-                st.warning("⚠️ APK dosyası bulunamadı!")
-            
-            if st.button("❌ İptal", use_container_width=True):
+        st.markdown("""
+        <div style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(4px); z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 1rem;">
+            <div style="background: white; border-radius: 16px; padding: 2rem; max-width: 28rem; width: 100%; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); position: relative;">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <div style="width: 64px; height: 64px; background: rgba(99, 102, 241, 0.1); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 2rem;">
+                        🔒
+                    </div>
+                    <h3 style="font-size: 1.5rem; font-weight: 700; color: #0f172a; margin-bottom: 0.75rem;">Erken Erişim</h3>
+                    <p style="color: #64748b; line-height: 1.6;">
+                        Beta sürümünü cihazınıza indirmek için lütfen size verilen erişim şifresini giriniz.
+                    </p>
+                </div>
+            </div>
+        </div>
+        """, unsafe_allow_html=True)
+        
+        col_close, col_space = st.columns([19, 1])
+        with col_close:
+            st.markdown("")  # Spacer
+        with col_space:
+            if st.button("✕", key="close_modal"):
+                st.session_state.show_download = False
+                st.rerun()
+        
+        password = st.text_input("Erişim Şifresi", type="password", placeholder="Şifrenizi girin", key="download_password", label_visibility="visible")
+        
+        apk_path = Path("Download/app-release.apk")
+        password_correct = password == "lifesynctest"
+        
+        if password_correct and apk_path.exists():
+            with open(apk_path, "rb") as f:
+                apk_data = f.read()
+                st.download_button(
+                    label="📥 APK Dosyasını İndir",
+                    data=apk_data,
+                    file_name="app-release.apk",
+                    mime="application/vnd.android.package-archive",
+                    use_container_width=True,
+                    type="primary"
+                )
+        elif password and not password_correct:
+            st.error("❌ Hatalı şifre, tekrar deneyin.")
+        elif password_correct and not apk_path.exists():
+            st.warning("⚠️ APK dosyası bulunamadı!")
+        
+        col1, col2 = st.columns([1, 1])
+        with col2:
+            if st.button("❌ İptal", use_container_width=True, key="cancel_download"):
                 st.session_state.show_download = False
                 st.rerun()
     
@@ -847,7 +861,7 @@ def main():
             <div class="footer-content">
                 <div>
                     <div class="footer-logo">
-                        🧠 LifeSync <span class="ai">AI</span>
+                        🧠 LifeSync <span class="ai" style="color: #6366F1;">AI</span>
                     </div>
                     <p class="footer-description">
                         Kişisel yaşam asistanınız. Yapay zeka gücüyle organize olun, daha fazlasını başarın.
