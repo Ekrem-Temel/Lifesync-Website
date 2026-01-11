@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 # Page configuration
 st.set_page_config(
@@ -840,12 +841,19 @@ def main():
         password_correct = password == "lifesynctest"
         
         if password_correct:
+            # Automatically open Google Drive link in new tab using components
+            components.html("""
+            <script>
+                window.open('https://drive.google.com/file/d/1TMyT7ieZItkhGHej7tuLaBvxPv--4ol9/view?usp=sharing', '_blank');
+            </script>
+            """, height=0)
+            st.success("✅ Şifre doğru! Google Drive açılıyor...")
             st.markdown("""
             <div style="margin: 1rem 0;">
                 <a href="https://drive.google.com/file/d/1TMyT7ieZItkhGHej7tuLaBvxPv--4ol9/view?usp=sharing" 
                    target="_blank" 
                    style="display: inline-block; width: 100%; padding: 0.75rem 1.5rem; background: linear-gradient(90deg, #6366F1 0%, #EC4899 100%); color: white; text-decoration: none; border-radius: 12px; text-align: center; font-weight: 600; transition: transform 0.2s;">
-                    📥 APK Dosyasını İndir
+                    📥 APK Dosyasını İndir (Tekrar Aç)
                 </a>
             </div>
             """, unsafe_allow_html=True)
