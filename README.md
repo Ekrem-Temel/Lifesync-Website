@@ -2,19 +2,48 @@
 <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
-# Run and deploy your AI Studio app
+# LifeSync AI Landing Page
 
-This contains everything you need to run your app locally.
+Modern landing page for LifeSync AI, a personal organization app powered by Google Gemini.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Ph-ZvQCOAnmIKxuHyRmzOpKbbsokP3Qc
+## Streamlit ile Çalıştırma
 
-## Run Locally
+**Gereksinimler:** Python 3.8+
 
-**Prerequisites:**  Node.js
+### Kurulum
 
+1. Python bağımlılıklarını yükleyin:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+2. Streamlit uygulamasını çalıştırın:
+   ```bash
+   streamlit run app.py
+   ```
+
+3. Tarayıcınızda otomatik olarak açılacak (genellikle `http://localhost:8501`)
+
+### Özellikler
+
+- ✨ Modern ve responsive tasarım
+- 🎨 Özelleştirilebilir tema
+- 📱 Mobil uyumlu arayüz
+- 🔒 Güvenli APK indirme sistemi
+- 🚀 Hızlı ve kolay kurulum
+
+## Eski React Versiyonu (Opsiyonel)
+
+React/TypeScript versiyonunu çalıştırmak için:
+
+**Gereksinimler:** Node.js
+
+1. Bağımlılıkları yükleyin:
+   ```bash
+   npm install
+   ```
+
+2. Uygulamayı çalıştırın:
+   ```bash
+   npm run dev
+   ```
