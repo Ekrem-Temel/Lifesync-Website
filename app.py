@@ -1,5 +1,4 @@
 import streamlit as st
-from pathlib import Path
 
 # Page configuration
 st.set_page_config(
@@ -838,24 +837,20 @@ def main():
         
         password = st.text_input("Erişim Şifresi", type="password", placeholder="Şifrenizi girin", key="download_password", label_visibility="visible")
         
-        apk_path = Path("Download/app-release.apk")
         password_correct = password == "lifesynctest"
         
-        if password_correct and apk_path.exists():
-            with open(apk_path, "rb") as f:
-                apk_data = f.read()
-                st.download_button(
-                    label="📥 APK Dosyasını İndir",
-                    data=apk_data,
-                    file_name="app-release.apk",
-                    mime="application/vnd.android.package-archive",
-                    use_container_width=True,
-                    type="primary"
-                )
+        if password_correct:
+            st.markdown("""
+            <div style="margin: 1rem 0;">
+                <a href="https://drive.google.com/file/d/1TMyT7ieZItkhGHej7tuLaBvxPv--4ol9/view?usp=sharing" 
+                   target="_blank" 
+                   style="display: inline-block; width: 100%; padding: 0.75rem 1.5rem; background: linear-gradient(90deg, #6366F1 0%, #EC4899 100%); color: white; text-decoration: none; border-radius: 12px; text-align: center; font-weight: 600; transition: transform 0.2s;">
+                    📥 APK Dosyasını İndir
+                </a>
+            </div>
+            """, unsafe_allow_html=True)
         elif password and not password_correct:
             st.error("❌ Hatalı şifre, tekrar deneyin.")
-        elif password_correct and not apk_path.exists():
-            st.warning("⚠️ APK dosyası bulunamadı!")
         
         col1, col2 = st.columns([1, 1])
         with col2:

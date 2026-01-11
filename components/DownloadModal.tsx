@@ -15,14 +15,8 @@ const DownloadModal: React.FC<DownloadModalProps> = ({ isOpen, onClose }) => {
 
   const handleDownload = () => {
     if (password === 'lifesynctest') {
-      // Create a temporary link to trigger download
-      const link = document.createElement('a');
-      // Updated path to point to the Download folder
-      link.href = 'Download/app-release.apk'; 
-      link.download = 'app-release.apk';
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // Redirect to Google Drive link
+      window.open('https://drive.google.com/file/d/1TMyT7ieZItkhGHej7tuLaBvxPv--4ol9/view?usp=sharing', '_blank');
       
       // Reset and close
       setError(false);
